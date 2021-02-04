@@ -330,12 +330,12 @@ declare global {
              *
              * The value will be undefined until the device is properly prepared (i.e. in detox.init())
              */
-            id: string;
+            readonly id: string;
             /**
              * Holds a descriptive name of the device. Example: emulator-5554 (Pixel_API_29)
              * The value will be undefined until the device is properly prepared (i.e. in detox.init()).
              */
-            name: string;
+            readonly name: string;
             /**
              * Launch the app.
              *
@@ -382,7 +382,7 @@ declare global {
              *
              * @see AppLaunchArgs
              */
-            appLaunchArgs: AppLaunchArgs;
+            readonly appLaunchArgs: AppLaunchArgs;
             /**
              * Terminate the app.
              *
