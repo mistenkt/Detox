@@ -6,10 +6,9 @@ class LaunchArgs {
   }
 
   modify(launchArgs) {
-    Object
-      .keys(launchArgs)
-      .forEach((name) =>
-        this._setLaunchArg(name, launchArgs[name]));
+    for (const name of _.keys(launchArgs)) {
+      this._setLaunchArg(name, launchArgs[name]));
+    }
   }
 
   reset() {
